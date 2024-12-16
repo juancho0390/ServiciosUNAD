@@ -1,0 +1,76 @@
+body {
+    margin: 3%;
+}
+
+
+.head {
+    background-color: #9cc4fc;
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    font-size: 3vw;
+    height: 7vw;
+    align-content: center;
+    border-radius: 50px;
+    
+}
+
+.Banner {
+    width: 100%;
+    padding: 5% 0 0 0;
+}
+
+.conteiner_general {
+    /*border: 5px solid #00ff21;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.conteiner_general2 {
+    /*border: 5px solid;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contenedor_candado {
+    text-align: right;
+}
+
+.candado {
+    max-width: 350px;
+    width: 85%;
+    
+}
+
+.container_text_box {
+    /*border: 5px solid #ff0000;*/
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.conteiner-up {
+    display: grid;
+    /*border: 5px solid #ff00dc;*/
+    align-content: center;
+    padding: 100px 0 0 0;
+}
+
+.conteiner-down {
+    /*border: 5px solid #ffd800;*/
+    text-align: center;
+}
+
+.boton {
+    width: 100px;
+    height: 30px;
+    font-family: "Sniglet", system-ui;
+    font-size: 14px;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+}
