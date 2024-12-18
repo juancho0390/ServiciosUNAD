@@ -93,7 +93,9 @@ function descargarPDF (n) {
     
 
     
-
+function next() {
+    window.location.href = "../paginas/testHomologaciones.html"
+}
 
 
 
