@@ -1,8 +1,8 @@
 function verificarUsuario() {
-    const user = document.getElementById("nombre").value;
-    const pass = document.getElementById("contraseña").value;
+    var user = document.getElementById("nombre").value;
+    var pass = document.getElementById("contraseña").value;
 
     if (user == "Admin" && pass == "Admin") {
-        window.location.href = "/paginas/temario.html"
+        window.location.href = "paginas/temario.html"
     }
 }

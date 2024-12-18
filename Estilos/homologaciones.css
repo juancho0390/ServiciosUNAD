@@ -2,11 +2,9 @@ body {
     margin: 0 10% 0 10%;
 }
 
-
-
-
-
-
+.view {
+    display: none;
+}
 
 
 .head {
@@ -232,12 +230,13 @@ li {
     cursor: pointer;
     font-family: "Sniglet", system-ui;
     width: auto;
+    height: auto;
     transition: 200ms ease-in-out;
 }
 
     .boton:hover {
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        transform: scale(1.2);
+        transform: scale(1.08);
     }
 
 

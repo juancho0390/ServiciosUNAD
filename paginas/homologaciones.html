@@ -11,9 +11,9 @@
 
     <title>Homologaciones</title>
 
-    <link rel="stylesheet" type="text/css" href="/Estilos/homologaciones.css" />
+    <link rel="stylesheet" type="text/css" href="../Estilos/homologaciones.css" />
 
-    <script src="/js/homologaciones.js"></script>
+    
 
 
 </head>
@@ -66,7 +66,7 @@
                             Este reconocimiento se basa en la similitud de contenidos, nivel de formación y número de créditos académicos.
                         </p>
                         <div class="contenedorBoton">
-                            <asp:Button class="boton" ID="Button1" runat="server" Text="Siguiente" OnClick="Button1_Click" />
+                            <button class="boton" type="button" onclick="vista(1)">Siguiente</button>
                         </div>
                     </div>
 
@@ -93,9 +93,9 @@
                             El proceso se inicia mediante el Formato Único de Solicitudes Digital (FUSD) disponible en el sitio oficial de la UNAD.
                         </div>
                         <div class="contenedorBoton">
-                            <asp:Button class="boton" ID="Button2" runat="server" Text="Anterior" OnClick="Button2_Click" />
+                            <button class="boton" onclick="vista(0)" type="button">Anterior</button>
                             &nbsp;&nbsp;&nbsp;
-                            <asp:Button class="boton" ID="Button3" runat="server" Text="Siguiente" OnClick="Button3_Click" />
+                            <button class="boton" onclick="vista(2)" type="button">Siguiente</button>
                         </div>
                     </div>
 
@@ -126,9 +126,9 @@
                         </div>
                     
                         <div class="contenedorBoton">
-                            <asp:Button class="boton" ID="Button4" runat="server" Text="Anterior" OnClick="Button4_Click" />
+                            <button class="boton" onclick="vista(1)" type="button">Anterior</button>
                             &nbsp;&nbsp;&nbsp;
-                            <asp:Button class="boton" ID="Button5" runat="server" Text="Siguiente" OnClick="Button5_Click" />
+                            <button class="boton" onclick="vista(3)" type="button">Siguiente</button>
                     
                         </div>
                     </div>
@@ -149,8 +149,7 @@
                         </p>
                     
                         <div class="contenedorBoton">
-                            <asp:Button class="boton" ID="Button6" runat="server" Text="Anterior" OnClick="Button6_Click" />
-                    
+                            <button class="boton" onclick="vista(2)" type="button">Anterior</button>                    
                         </div>
                     
                     </div>
@@ -175,8 +174,8 @@
         <div class="contenedor3">
             <div class="contenedorCentral">
                 <div class="subContenedor">
-                    <img class="fondo" src="/Assets/images/fondo.jpeg" alt="">
-                    <img class="persona" src="/Assets/images/persona.png" alt="">
+                    <img class="fondo" src="../Assets/images/fondo.jpeg" alt="">
+                    <img class="persona" src="../Assets/images/persona.png" alt="">
                 </div>
             </div>
 
@@ -214,8 +213,8 @@
         <div class="contenedor3">
             <div class="contenedorCentral">
                 <div class="subContenedor">
-                    <img class="fondo" src="/Assets/images/nubes.jpg" alt="">
-                    <img class="avion" src="/Assets/images/avionPapel.png" alt="" style="height: 280px">
+                    <img class="fondo" src="../Assets/images/nubes.jpg" alt="">
+                    <img class="avion" src="../Assets/images/avionPapel.png" alt="" style="height: 280px">
                 </div>
             </div>
 
@@ -227,21 +226,13 @@
 
                 <p style="font-size: 1.3vw">
                     Documentacion en PDF:
-            <br />
+                    <br />
                     <ul>
-                        <li>
-                            <asp:Button class="boton" ID="Button11" runat="server" Text="Descargar" OnClick="Button11_Click" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Homologacion Externa</li>
-                        <li>
-                            <asp:Button class="boton" ID="Button12" runat="server" Text="Descargar" OnClick="Button12_Click" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Homologacion Interna</li>
-                        <li>
-                            <asp:Button class="boton" ID="Button13" runat="server" Text="Descargar" OnClick="Button13_Click" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Homologacion por Convenio</li>
-                        <li>
-                            <asp:Button class="boton" ID="Button14" runat="server" Text="Descargar" OnClick="Button14_Click" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Verificacion de Acuerdo de Homologacion</li>
+                        <li><button class="boton">Descargar</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Homologacion Externa</li>
+                        <li><button class="boton">Descargar</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Homologacion Interna</li>
+                        <li><button class="boton">Descargar</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Homologacion por Convenio</li>
+                        <li><button class="boton">Descargar</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Verificacion de Acuerdo de Homologacion</li>
                     </ul>
-
-
-
-
                 </p>
 
             </div>
@@ -271,16 +262,15 @@
                 </div>
 
                 <div class="contenedorBoton">
-                    <asp:Button class="boton" ID="Button7" runat="server" Text="Ir al Test" OnClick="Button7_Click" />
-
+                    <button class="boton">Ir al Test</button>
                 </div>
 
             </div>
 
             <div class="contenedorCentral">
                 <div class="subContenedor">
-                    <img class="fondo" src="/Assets/images/test.jpg" alt="">
-                    <img class="persona" src="/Assets/images/mano.png" alt="" style="height: 300px">
+                    <img class="fondo" src="../Assets/images/test.jpg" alt="">
+                    <img class="persona" src="../Assets/images/mano.png" alt="" style="height: 300px">
                 </div>
 
             </div>
@@ -291,11 +281,14 @@
 
         <footer>
             <div class="banner">
-                <img class="Banner" src="Assets/images/banner UNAD.jpg" />
+                <img class="Banner" src="../Assets/images/banner UNAD.jpg" />
 
             </div>
 
         </footer>
     </form>
 </body>
+
+<script src="../js/homologaciones.js">
+</script>
 </html>
