@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Capriola&family=DynaPuff:wght@400..700&family=Lexend:wght@100..900&family=Sniglet:wght@400;800&family=Viga&display=swap');
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Test homologaciones</title>
+
+    <link rel="stylesheet" type="text/css" href="/Estilos/testHomologaciones.css" />
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <header class="head">
+            ¿Preparado para el Test?
+        </header>
+
+        <div class="subtitulo">
+            Pues venga a darle
+        </div>
+
+        <p class="parrafo">
+            Este espacio esta pensado para poner a prueba tus conocimientos sobre la informacion proporcionada en la
+            leccion anterior. El test consta de 5 preguntas de seleccion multiple con unica respuesta, para aprobar el
+            test debes responder correctamente almenos 3 preguntas. Puedes repetir el test las veces que consideres
+            necesarias hasta aprobarlo.
+        </p>
+
+        <div class="titulo">
+            Test Sobre Homologaciones
+        </div>
+
+        <div ID="MultiView1" runat="server" ActiveViewIndex="0">
+            <div class="view" ID="View1" runat="server">
+                <div class="contenedor_pregunta">
+                    <div class="titulo_pregunta">
+                        Pregunta 1:
+
+                    </div>
+                    <div class="enunciado">
+                        ¿Cuál es el primer paso en el proceso de homologación en la UNAD?
+                    </div>
+
+                    <div class="respuestas">
+
+                        <input type="radio" name="Pregunta1" /> Presentarse en la sede de la UNAD.
+                        <br />
+                        <input type="radio" name="Pregunta1" /> Consultar con el asesor de su programa académico.
+                        <br />
+                        <input type="radio" name="Pregunta1" class="correct" /> Realizar una solicitud formal de
+                        homologación.
+                        <br />
+                        <input type="radio" name="Pregunta1" /> Realizar un pago administrativo.
+                        <br />
+
+                    </div>
+
+                    <div class="contenedorBoton">
+                        <button class="boton" type="button" onclick="vista(1)">Siguente Pregunta</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view" ID="View2" runat="server">
+                <div class="contenedor_pregunta">
+                    <div class="titulo_pregunta">
+                        Pregunta 2:
+
+                    </div>
+
+                    <div class="enunciado">
+                        ¿Qué documento es necesario para iniciar el trámite de homologación?
+                    </div>
+
+                    <div class="respuestas">
+                        <input type="radio" name="Pregunta2" /> Copia del diploma de secundaria.
+                        <br />
+                        <input type="radio" name="Pregunta2" class="correct" /> Certificado de notas de la institución
+                        de procedencia.
+                        <br />
+                        <input type="radio" name="Pregunta2" /> Carta de recomendación de la universidad de origen.
+                        <br />
+                        <input type="radio" name="Pregunta2" /> Certificado de buena conducta.
+                        <br />
+
+                    </div>
+
+                    <div class="contenedorBoton">
+                        <button class="boton" onclick="vista(2)" type="button">Siguiente Pregunta</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view" ID="View3" runat="server">
+                <div class="contenedor_pregunta">
+                    <div class="titulo_pregunta">
+                        Pregunta 3:
+
+                    </div>
+
+                    <div class="enunciado">
+                        ¿Quién se encarga de evaluar la solicitud de homologación en la UNAD?
+
+                    </div>
+
+                    <div class="respuestas">
+                        <input type="radio" name="Pregunta3" /> El rector de la universidad.
+                        <br />
+                        <input type="radio" name="Pregunta3" /> El consejo directivo de la UNAD.
+                        <br />
+                        <input class="correct" type="radio" name="Pregunta3" /> Un comité académico de la universidad.
+                        <br />
+                        <input type="radio" name="Pregunta3" /> El asesor académico del estudiante.
+                        <br />
+
+                    </div>
+
+                    <div class="contenedorBoton">
+                        <button type="button" onclick="vista(3)" class="boton">Siguiente Pregunta</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="view" ID="View4" runat="server">
+                <div class="contenedor_pregunta">
+                    <div class="titulo_pregunta">
+                        Pregunta 4:
+
+                    </div>
+
+                    <div class="enunciado">
+                        ¿Qué ocurre si la homologación es aprobada?
+
+                    </div>
+
+                    <div class="respuestas">
+                        <input type="radio" name="Pregunta4" /> El estudiante debe pagar un arancel adicional.
+                        <br />
+                        <input class="correct" type="radio" name="Pregunta4" /> Se registran las asignaturas homologadas
+                        en el historial académico del estudiante.
+                        <br />
+                        <input type="radio" name="Pregunta4" /> Se requiere una entrevista con el decano del programa.
+                        <br />
+                        <input type="radio" name="Pregunta4" /> La universidad organiza un examen de suficiencia.
+                        <br />
+
+                    </div>
+
+                    <div class="contenedorBoton">
+                        <button type="button" onclick="vista(4)" class="boton">Siguiente Pregunta</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="view" ID="View5" runat="server">
+                <div class="contenedor_pregunta">
+                    <div class="titulo_pregunta">
+                        Pregunta 5:
+
+                    </div>
+
+                    <div class="enunciado">
+                        ¿Cuál de las siguientes afirmaciones es cierta respecto al proceso de homologación en la
+                        UNAD?
+
+                    </div>
+
+                    <div class="respuestas">
+                        <input type="radio" name="Pregunta5" /> Solo es aplicable para estudios realizados en la UNAD.
+                        <br />
+                        <input class="correct" type="radio" name="Pregunta5" /> Requiere una verificación de contenidos
+                        cursados y carga horaria.
+                        <br />
+                        <input type="radio" name="Pregunta5" /> No es necesario presentar documentos de respaldo
+                        académico.
+                        <br />
+                        <input type="radio" name="Pregunta5" /> El proceso es gratuito para todos los estudiantes.
+                        <br />
+
+                    </div>
+
+                    <div class="contenedorBoton">
+                        <button type="button" class="boton" type="button" onclick="results(), vista(5)">Finalizar
+                            Prueba</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view" ID="View6" runat="server">
+                <div class="contenedor_pregunta">
+                    <div class="titulo_pregunta">
+                        Resultados:
+
+                    </div>
+
+                    <div class="enunciado">
+                        Es hora de conocer el resultado de tu aprendizaje
+
+                    </div>
+
+                    <div class="respuestas">
+                        Pregunta 1&nbsp;: <label class="etiqueta"></label>
+                        <br />
+                        Pregunta 2: <label class="etiqueta"></label>
+                        <br />
+                        Pregunta 3: <label class="etiqueta"></label>
+                        <br />
+                        Pregunta 4: <label class="etiqueta"></label>
+                        <br />
+                        Pregunta 5: <label class="etiqueta"></label>
+
+                    </div>
+
+                    <div class="retro" id="retro">
+                        <label Id="resultado" style="font-size: 50px;"></label>
+                        <br />
+                        Obtuviste <label id="counter"></label> respuestas
+                        correctas.
+                        <br />
+                        Tu resultado es <label id="lbl1" style="font-size: 25px;"></label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <footer>
+            <div class="banner">
+                <img class="Banner" src="/Assets/images/banner UNAD.jpg" />
+
+            </div>
+
+        </footer>
+    </form>
+</body>
+
+<script src="/js/testHomologaciones.js"></script>
+
+</html>
