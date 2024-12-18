@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Capriola&family=DynaPuff:wght@400..700&family=Lexend:wght@100..900&family=Sniglet:wght@400;800&family=Viga&display=swap');
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Test</title>
+
+    <link rel="stylesheet" type="text/css" href="../Estilos/testOpcionGrado.css" />
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <header class="head">
+            ¿Preparado para el Test?
+        </header>
+
+        <div class="subtitulo">
+            Pues venga a darle
+        </div>
+
+        <p class="parrafo">
+            Este espacio esta pensado para poner a prueba tus conocimientos sobre la informacion proporcionada en la
+            leccion anterior. El test consta de 5 preguntas de seleccion multiple con unica respuesta, para aprobar
+            el test debes responder correctamente almenos 3 preguntas. Puedes repetir el test las veces que consideres
+            necesarias hasta aprobarlo.
+        </p>
+
+        <div class="titulo">
+            Test Sobre Opciones de Grado
+        </div>
+
+
+        <div class="view" ID="View1" runat="server">
+            <div class="contenedor_pregunta">
+                <div class="titulo_pregunta">
+                    Pregunta 1:
+
+                </div>
+                <div class="enunciado">
+                    ¿Qué requisito principal debe cumplir un estudiante para registrar una opción de grado en la UNAD?
+
+                </div>
+                <div class="respuestas">
+                    <input type="radio" name="Pregunta1" /> Presentar un proyecto empresarial aprobado por un tutor.
+                    <br />
+                    <input class="correct" type="radio" name="Pregunta1" /> Haber completado el 100% de los créditos del plan de estudios, excepto los correspondientes a la
+                    opción de grado.
+                    <br />
+                    <input type="radio" name="Pregunta1" /> Realizar una inscripción directa en la facultad sin requisitos adicionales.
+                    <br />
+                    <input type="radio" name="Pregunta1" /> Asistir a todas las tutorías obligatorias del programa.
+                    <br />
+
+                </div>
+                <div class="contenedorBoton">
+                    <button class="boton" type="button" onclick="vista(1)">Siguiente Pregunta</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="view" ID="View2" runat="server">
+            <div class="contenedor_pregunta">
+                <div class="titulo_pregunta">
+                    Pregunta 2:
+
+                </div>
+                <div class="enunciado">
+                    ¿Cuál de las siguientes no es una opción de grado en la UNAD?
+
+                </div>
+
+                <div class="respuestas">
+                    <input type="radio" name="Pregunta2" /> Monografía
+                    <br />
+                    <input type="radio" name="Pregunta2" /> Proyecto de investigación.
+                    <br />
+                    <input class="correct" type="radio" name="Pregunta2" /> Examen de suficiencia en idiomas extranjeros.
+                    <br />
+                    <input type="radio" name="Pregunta2" /> Certificado de buena conducta.
+                    <br />
+
+                </div>
+                <div class="contenedorBoton">
+                    <button class="boton" type="button" onclick="vista(2)">Siguiente Pregunta</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="view" ID="View3" runat="server">
+            <div class="contenedor_pregunta">
+                <div class="titulo_pregunta">
+                    Pregunta 3:
+
+                </div>
+
+                <div class="enunciado">
+                    ¿Qué debe realizar un estudiante en caso de elegir un proyecto de investigación como opción de
+                    grado?
+
+                </div>
+
+                <div class="respuestas">
+                    <input class="correct" type="radio" name="Pregunta3" /> Inscribirse en una línea de investigación institucional.
+                    <br />
+                    <input type="radio" name="Pregunta3" /> Presentar una monografía escrita individualmente.
+                    <br />
+                    <input type="radio" name="Pregunta3" /> Aprobar un examen relacionado con el tema de investigación.
+                    <br />
+                    <input type="radio" name="Pregunta3" /> Publicar un artículo en una revista internacional.
+                    <br />
+
+                </div>
+
+                <div class="contenedorBoton">
+                    <button class="boton" type="button" onclick="vista(3)">Siguiente Pregunta</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="view" ID="View4" runat="server">
+            <div class="contenedor_pregunta">
+                <div class="titulo_pregunta">
+                    Pregunta 4:
+
+                </div>
+
+                <div class="enunciado">
+                    ¿Qué evaluación nacional es obligatoria para los estudiantes antes de registrar una opción de grado
+                    en la UNAD?
+
+                </div>
+
+                <div class="respuestas">
+                    <input class="correct" type="radio" name="Pregunta4" /> Prueba SABER PRO.
+                    <br />
+                    <input type="radio" name="Pregunta4" /> Examen de suficiencia académica.
+                    <br />
+                    <input type="radio" name="Pregunta4" /> Evaluación diagnóstica interna.
+                    <br />
+                    <input type="radio" name="Pregunta4" /> Prueba de competencias en TIC.
+                    <br />
+
+                </div>
+
+                <div class="contenedorBoton">
+                    <button class="boton" type="button" onclick="vista(4)">Siguiente Pregunta</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="view" ID="View5" runat="server">
+            <div class="contenedor_pregunta">
+                <div class="titulo_pregunta">
+                    Pregunta 5:
+
+                </div>
+
+                <div class="enunciado">
+                    ¿Cuál es el propósito principal de las tutorías ofrecidas durante el desarrollo de la opción de
+                    grado?
+
+                </div>
+
+                <div class="respuestas">
+                    <input type="radio" name="Pregunta5" /> Ayudar al estudiante a resolver problemas administrativos.
+                    <br />
+                    <input class="correct" type="radio" name="Pregunta5" /> Guiar al estudiante en la ejecución y desarrollo del proyecto de grado.
+                    <br />
+                    <input type="radio" name="Pregunta5" /> Proporcionar acceso a herramientas tecnológicas.
+                    <br />
+                    <input type="radio" name="Pregunta5" /> Ofrecer clases magistrales sobre temas generales del programa.
+                    <br />
+
+                </div>
+
+                <div class="contenedorBoton">
+                    <button class="boton" type="button" onclick="results(), vista(5)">Finalizar Prueba</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="view" ID="View6" runat="server">
+            <div class="contenedor_pregunta">
+                <div class="titulo_pregunta">
+                    Resultados:
+
+                </div>
+
+                <div class="enunciado">
+                    Es hora de conocer el resultado de tu aprendizaje
+
+                </div>
+
+                <div class="respuestas">
+                    Pregunta 1&nbsp;: <label class="etiqueta"></label>
+                    <br />
+                    Pregunta 2: <label class="etiqueta"></label>
+                    <br />
+                    Pregunta 3: <label class="etiqueta"></label>
+                    <br />
+                    Pregunta 4: <label class="etiqueta"></label>
+                    <br />
+                    Pregunta 5: <label class="etiqueta"></label>
+                
+                </div>
+
+                <div class="retro" id="retro">
+                    <label Id="resultado" style="font-size: 50px;"></label>
+                        <br />
+                        Obtuviste <label id="counter"></label> respuestas
+                        correctas.
+                        <br />
+                        Tu resultado es <label id="lbl1" style="font-size: 25px;"></label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <footer>
+            <div class="banner">
+                <img class="Banner" src="/Assets/images/banner UNAD.jpg" />
+
+            </div>
+
+        </footer>
+    </form>
+</body>
+
+<script src="../js/testOpcionGrado.js"></script>
+</html>
