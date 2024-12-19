@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Capriola&family=DynaPuff:wght@400..700&family=Lexend:wght@100..900&family=Sniglet:wght@400;800&family=Viga&display=swap');
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Test Escenarios Practicos UNAD</title>
+
+    <link rel="stylesheet" type="text/css" href="../Estilos/test.css" />
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <header class="head">
+            ¿Preparado para el Test?
+        </header>
+
+        <div class="subtitulo">
+            Pues venga a darle
+        </div>
+
+        <p class="parrafo">
+            Este espacio esta pensado para poner a prueba tus conocimientos sobre la informacion proporcionada en la
+            leccion anterior. El test consta de 5 preguntas de seleccion multiple con unica respuesta, para aprobar el
+            test debes responder correctamente almenos 3 preguntas. Puedes repetir el test las veces que consideres
+            necesarias hasta aprobarlo.
+        </p>
+
+        <div class="titulo">
+            Test Sobre Escenarios Practicos
+        </div>
+
+
+        <div class="view" ID="View1" runat="server">
+            <div class="contenedor_pregunta">
+                <div class="titulo_pregunta">
+                    Pregunta 1:
+
+                </div>
+                <div class="enunciado">
+                    ¿Qué son los escenarios prácticos en la UNAD?
+
+                </div>
+                <div class="respuestas">
+                    <label>
+                        <input type="radio" name="Pregunta1" />
+                        Espacios exclusivamente virtuales donde se desarrollan competencias teóricas.
+                    </label>
+                    <br />
+                    <label>
+                        <input class="correct" type="radio" name="Pregunta1" />
+                    Espacios físicos y virtuales diseñados para fortalecer competencias prácticas y aplicadas.>
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" name="Pregunta1" />
+                    Talleres exclusivos para la elaboración de proyectos teóricos finales.
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" name="Pregunta1" />
+                    Actividades extracurriculares no obligatorias para los estudiantes.
+                    </label>
+                    <br />
+
+                </div>
+
+                <div class="contenedorBoton">
+                    <button class="boton" type="button" onclick="vista(1)">Siguiente Pregunta</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="view" ID="View2" runat="server">
+            <div class="contenedor_pregunta">
+                <div class="titulo_pregunta">
+                    Pregunta 2:
+
+                </div>
+
+                <div class="enunciado">
+                    ¿Cuál de las siguientes opciones es un ejemplo de escenario práctico en la UNAD?
+                </div>
+
+                <div class="respuestas">
+                    <label>
+                        <input type="radio" name="Pregunta2" />
+                    Una biblioteca digital.
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" name="Pregunta2" />
+                    Un foro de discusión en línea.
+                    </label>
+                    <br />
+                    <label>
+                        <input class="correct" type="radio" name="Pregunta2" />
+                    Un laboratorio físico o simulado.
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" name="Pregunta2" />
+                    Un centro cultural externo.
+                    </label>
+                    <br />
+
+                </div>
+
+                <div class="contenedorBoton">
+                    <button class="boton" type="button" onclick="vista(2)" >Siguiente Pregunta</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="view" ID="View3" runat="server">
+            <div class="contenedor_pregunta">
+                <div class="titulo_pregunta">
+                    Pregunta 3:
+
+                </div>
+
+                <div class="enunciado">
+                    ¿Qué tipo de práctica es requerida en programas como Tecnología en Regencia de Farmacia?
+
+                </div>
+
+                <div class="respuestas">
+                    <label>
+                        <input type="radio" name="Pregunta3" />
+                    Prácticas únicamente teóricas.
+                    </label>
+                    <br />
+                    <label>
+                        <input class="correct" type="radio" name="Pregunta3" />
+                    Prácticas de laboratorio y profesionales.
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" name="Pregunta3" />
+                    Simulaciones exclusivamente virtuales.
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" name="Pregunta3" />
+                    Proyectos de investigación documental.
+                    </label>
+                    <br />
+
+                </div>
+
+                <div class="contenedorBoton">
+                    <button class="boton" type="button" onclick="vista(3)">Siguiente Pregunta</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="view" ID="View4" runat="server">
+            <div class="contenedor_pregunta">
+                <div class="titulo_pregunta">
+                    Pregunta 4:
+
+                </div>
+
+                <div class="enunciado">
+                    ¿Cuál es una de las principales características del Sistema de Oferta Integrada de Laboratorios
+                    (OIL) en la UNAD?
+
+                </div>
+
+                <div class="respuestas">
+                    <label>
+                        <input type="radio" name="Pregunta4" />
+                    Permite realizar prácticas exclusivamente en laboratorios externos.
+                    </label>
+                    <br />
+                    <label>
+                        <input class="correct" type="radio" name="Pregunta4" />
+                    Gestiona la inscripción, seguimiento y evaluación de prácticas desde el campus virtual.
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" name="Pregunta4" />
+                    Funciona únicamente para cursos de ciencias básicas.
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" name="Pregunta4" />
+                    Reemplaza las prácticas presenciales con actividades en foros en línea.
+                    </label>
+                    <br />
+
+                </div>
+
+                <div class="contenedorBoton">
+                    <button class="boton" type="button" onclick="vista(4)">Siguiente Pregunta</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="view" ID="View5" runat="server">
+            <div class="contenedor_pregunta">
+                <div class="titulo_pregunta">
+                    Pregunta 5:
+
+                </div>
+
+                <div class="enunciado">
+                    ¿Cuál de los siguientes es un requisito para realizar una práctica profesional en la UNAD?
+
+                </div>
+
+                <div class="respuestas">
+                    <label>
+                        <input type="radio" name="Pregunta5" />
+                    No haber aprobado las asignaturas previas al componente práctico.
+                    </label>
+                    <br />
+                    <label>
+                        <input class="correct" type="radio" name="Pregunta5" />
+                    Registrar la práctica en la plataforma académica y contar con un escenario avalado por la
+                    universidad.
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" name="Pregunta5" />
+                    Elegir cualquier lugar sin necesidad de aprobación institucional.
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" name="Pregunta5" />
+                    Completar la práctica sin supervisión docente.
+                    </label>
+                    <br />
+
+                </div>
+
+                <div class="contenedorBoton">
+                    <button class="boton" type="button" onclick="results(), vista(5)" >Finalizar Test</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="view" ID="View6" runat="server">
+            <div class="contenedor_pregunta">
+                <div class="titulo_pregunta">
+                    Resultados:
+
+                </div>
+
+                <div class="enunciado">
+                    Es hora de conocer el resultado de tu aprendizaje
+
+                </div>
+
+                <div class="respuestas">
+                    Pregunta &nbsp;1: <label class="etiqueta"></label>
+                        <br />
+                        Pregunta 2: <label class="etiqueta"></label>
+                        <br />
+                        Pregunta 3: <label class="etiqueta"></label>
+                        <br />
+                        Pregunta 4: <label class="etiqueta"></label>
+                        <br />
+                        Pregunta 5: <label class="etiqueta"></label>
+
+                </div>
+
+                <div class="retro" id="retro">
+                    <label Id="resultado" style="font-size: 50px;"></label>
+                        <br />
+                        Obtuviste <label id="counter"></label> respuestas
+                        correctas.
+                        <br />
+                        Tu resultado es <label id="lbl1" style="font-size: 25px;"></label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <footer>
+            <div class="banner">
+                <img class="Banner" src="../Assets/images/banner UNAD.jpg" />
+
+            </div>
+
+        </footer>
+    </form>
+</body>
+
+<script src="../js/test.js"></script>
+
+</html>

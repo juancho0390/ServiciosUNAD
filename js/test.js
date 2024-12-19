@@ -12,9 +12,12 @@ function results() {
         if(selected[i].checked){
             counter = counter + 1
             etiquetas[i].textContent = "Correcto"
+            etiquetas[i].style.color = "#008000"
+                   
         }
         else{
             etiquetas[i].textContent = "Incorrecto"
+            etiquetas[i].style.color = "#ff8a8a"
         }
     }
     

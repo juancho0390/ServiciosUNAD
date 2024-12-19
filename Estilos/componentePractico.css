@@ -2,65 +2,11 @@ body {
     margin: 0 10% 0 10%;
 }
 
-.derecha {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.tarjeta {
-    /*border: solid 2px;*/
-    width: 150px;
-    height: 200px;
-    border-radius: 10px;
-    display: grid;
-    grid-template-rows: 4fr 1fr;
-    padding: 3px;
-    background-color: #7ec8ff;
-    padding: 5px;
-    transition: 250ms ease-in-out;
-    text-decoration: none;
-}
-
-.tarjeta:hover  .cardTitle {
-        background-color: #ffd800;
-        cursor: pointer;
-        background-color: #ffd800;
-        transform: translateY(-40px);
-        border-radius: 0;
-    }
-
-.tarjeta:hover {
-        background-color: #ffd800;
-        cursor: pointer;
-    }
-
-
-.cardTitle {
-    text-align: center;
-    align-content: center;
-    font-size: 1.1rem;
-    font-family: "Sniglet", system-ui;
-    background-color: #f89898;
-    border-radius: 0 0 10px 10px;
-    margin: 3px 0 0 0;
-    color: white;
-    transition: 250ms ease-in-out;
+.view {
+    display: none;
 }
 
 
-.cardImage {
-    background-image: url("../Assets/images/estudiantes.jpg");
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    border-radius: 10px 10px 0 0;
-    transition: 250ms ease-in-out;
-}
 
 
 .head {
@@ -86,13 +32,13 @@ body {
     text-align: center;
     font-size: 3vw;
     height: 7vw;
-    margin: 20px;
+    /*margin: 20px;*/
     align-content: center;
     background-color: #ffd800;
     border-radius: 50px;
 }
 
-/*.contenedor1 {
+.contenedor1 {
     font-family: "Sniglet", system-ui;
     font-weight: 400;
     color: #000000;
@@ -105,7 +51,7 @@ body {
     background-color: #f8f8f8;
     border-radius: 50px;
     padding: 1% 0 1% 0;
-}*/
+}
 
 
 .Banner {
@@ -113,20 +59,21 @@ body {
     padding: 5% 0 0 0;
 }
 
-/*.contenedorImagen {
+.contenedorImagen {
     display: flex;
     justify-content: center;
     align-items: center;
-}*/
+}
 
 .imagen {
     width: 600px;
     height: 400px;
-    background-image: url('Assets/images/Grados.jpg');
+    background-image: url(../Assets/images/practicas.png);
     background-size: cover;
     background-position: center;
     border: 1px solid #ccc;
     border-radius: 100px;
+  
 }
 
 .contenedor2 {
@@ -135,11 +82,11 @@ body {
     gap: 50px;
     margin: 2% 0 2% 0;
     border: hidden;
+    ;
     align-items: center;
     border: hidden;
     border-radius: 50px;
     background-color: #f8f8f8;
-    padding: 2%;
 }
 
 .c1 {
@@ -170,10 +117,10 @@ body {
     margin: 3% 0 8% 0;
 }
 
-.izquierda {
+.parrafo {
     font-family: "Sniglet", system-ui;
     text-align: justify;
-    font-size: 1.1vw;
+    align-content: center;
 }
 
 .contenedorBoton {
@@ -336,58 +283,3 @@ li {
     text-align: center;
     margin: 5%;
 }
-
-
-/*Codigo para hacer responsivo el proyecto*/
-
-@media (max-width: 576px) {
-
-
-    body{
-        width: auto;
-    }
-
-    .contenedor2{
-        display: grid;
-        grid-template-columns: auto;
-        gap: 0px;
-        width: auto;
-        height: 320px;
-        border-radius: 10px;
-        
-    }
-
-    .izquierda {
-        font-size: 3vw;
-        padding: 3%;
-    }
-
-    .head, .subtitulo{
-        font-size: 4vw;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .tarjeta {
-        width: 4.5rem;
-        height: 6rem;
-    }
-
-    .cardImage{
-        object-fit: content;
-        display: block;
-    }
-
-    .cardTitle{
-        font-size: 2.5vw;
-    }
-
-    .derecha{
-        display: flex;
-        justify-content: center;
-        gap: 3%;
-        
-        
-    }
-
-  }

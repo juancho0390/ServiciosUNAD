@@ -50,7 +50,7 @@ body {
     font-style: normal;
     color: #000000;
     text-align: center;
-    font-size: 6vw;
+    font-size: 5vw;
     height: 11vw;
     margin: 20px;
     align-content: center;
@@ -80,7 +80,7 @@ body {
     background-color: #9cc4fc;
     padding: 10px;
     margin: 0 0 3% 0;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
 .respuestas {

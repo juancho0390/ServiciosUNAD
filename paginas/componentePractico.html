@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Capriola&family=DynaPuff:wght@400..700&family=Lexend:wght@100..900&family=Sniglet:wght@400;800&family=Viga&display=swap');
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Opciones de Grado</title>
+
+    <link rel="stylesheet" type="text/css" href="../Estilos/componentePractico.css" />
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <header class="head">
+            ¡Todo lo que debes saber sobre los Componentes Practicos en la UNAD!
+        </header>
+
+        <div class="subtitulo">
+            ¡Comencemos!
+        </div>
+
+        <div class="contenedor1">
+            <div class="c1">
+                Si no deseas leer, ¡te dejo este video informativo!
+            </div>
+
+            <div class="videoContainer" style="width: 600px; height: 400px; border: 1px solid #ccc;">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SZ72hbDTguQ?si=CK8Zy-wBkMZQLfyg"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+
+
+        </div>
+
+        <div class="subtitulo">
+            Ahora, si tienes tiempo checa esta seccion.
+
+        </div>
+
+        <div class="contenedor2">
+            <div class="contenedorMultiview">
+                <div class="multiview">
+
+                    <div class="view" ID="View1" runat="server">
+                        <div class="tituloParrafo">
+                            ¿Que son los Componentes Practicos?
+                        </div>
+                        <p class="parrafo">
+                            En la Universidad Nacional Abierta y a Distancia (UNAD), los componentes prácticos son
+                            una parte integral del proceso educativo, diseñados para complementar la formación teórica
+                            y fomentar el aprendizaje aplicado en contextos reales o simulados.
+                            <br />
+                            <br />
+                            Los componentes prácticos son actividades, ejercicios o proyectos orientados a aplicar los
+                            conocimientos adquiridos durante el proceso de formación. Se enfocan en fortalecer
+                            competencias
+                            específicas, como resolución de problemas, habilidades técnicas, toma de decisiones, y
+                            desarrollo
+                            profesional en un contexto real.
+                        </p>
+
+                        <div class="contenedorBoton">
+                            <button class="boton" type="button" onclick="vista(1)">Siguiente</button>
+                        </div>
+                    </div>
+
+                    <div class="view" ID="View2" runat="server">
+                        <div class="tituloParrafo">
+                            Tipos de Escenarios
+
+                        </div>
+                        <div class="parrafo">
+                            Practicas Profesionales:
+                            <br /><br />
+                            Las prácticas profesionales son una de las opciones más comunes en la UNAD y permiten a los
+                            estudiantes aplicar lo aprendido en un entorno laboral real. Estas prácticas suelen ser
+                            parte
+                            de la última fase del proceso formativo y pueden realizarse en instituciones, empresas u
+                            organizaciones vinculadas con el campo de estudio del estudiante.
+                            <br /><br />
+                            Caracteristicas:
+                            <br /><br />
+                            <ul>
+                                <li>Realización de tareas que corresponden a la profesión del estudiante.</li>
+                                <li>Supervisión por parte de un tutor académico y un tutor en el lugar de práctica.</li>
+                                <li>Presentación de informes, proyectos o resultados relacionados con la práctica.</li>
+                                <li>Generalmente, son remuneradas, aunque no es obligatorio.</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="contenedorBoton">
+                            <button class="boton" type="button" onclick="vista(0)">Anterior</button>
+                            &nbsp;&nbsp;&nbsp;
+                            <button class="boton" type="button" onclick="vista(2)">Siguiente</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="view" ID="View3" runat="server">
+                        <div class="tituloParrafo">
+                            Tipos de Escenarios
+                        </div>
+                        <div class="parrafo">
+                            Practicas Academicas:
+                            <br /><br />
+                            Las prácticas académicas son actividades que complementan la formación teórica y se realizan
+                            dentro de los
+                            programas de estudio, dentro de un aula o entorno académico. Están orientadas a consolidar
+                            las competencias
+                            y conocimientos adquiridos en los cursos previos.
+                            <br /><br />
+                            Caracteristicas:
+
+                            <ul>
+                                <li>Trabajo en equipo o de manera individual.</li>
+                                <li>Desarrollo de proyectos o actividades en laboratorio o en entornos simulados.</li>
+                                <li>Supervisión por parte de docentes o tutores.</li>
+
+                            </ul>
+                            <br />
+
+
+                            Puede ser presencial o en línea, dependiendo de la naturaleza de la actividad.
+                        </div>
+
+                        <div class="contenedorBoton">
+                            <button class="boton" type="button" onclick="vista(1)">Anterior</button>
+                            &nbsp;&nbsp;&nbsp;
+                            <button class="boton" type="button" onclick="vista(3)">Siguiente</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="view" ID="View4" runat="server">
+                        <div class="tituloParrafo">
+                            Tipos de Escenarios
+                        </div>
+                        <div class="parrafo">
+                            Proyectos Aplicados:
+                            <br /><br />
+                            Los proyectos aplicados se centran en la solución de problemas reales a través de la
+                            creación de
+                            productos o servicios. A menudo, están vinculados con empresas o comunidades, y pueden estar
+                            relacionados con la innovación tecnológica, el desarrollo social o ambiental, entre otros.
+                            <br />
+                            <br />
+                            Caracteristicas:
+                            <ul>
+                                <li>Proyectos en los que el estudiante aplica todos los conocimientos adquiridos en su
+                                    carrera para resolver un desafío práctico.</li>
+                                <li>Pueden implicar trabajo en grupos, participación en proyectos interdisciplinares y
+                                    colaboración con diferentes sectores.</li>
+                                <li>Los estudiantes deben generar un informe final o presentación con los resultados.
+                                </li>
+                            </ul>
+
+                            Aplica modalidad mixta, trabajo de campo o virtual. Dependiendo del modelo y naturaleza del
+                            proyecto.
+
+                        </div>
+
+                        <div class="contenedorBoton">
+                            <button class="boton" type="button" onclick="vista(2)">Anterior</button>
+                            &nbsp;&nbsp;&nbsp;
+                            <button class="boton" type="button" onclick="vista(4)">Siguiente</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="view" ID="View5" runat="server">
+                        <div class="tituloParrafo">
+                            Tipos de Escenarios
+
+                        </div>
+                        <div class="parrafo">
+                            Practicas Comunitarias:
+                            <br /><br />
+                            Estas prácticas son fundamentales en programas orientados a la responsabilidad social y el
+                            trabajo
+                            con comunidades vulnerables o en contextos específicos. Los estudiantes se vinculan a
+                            proyectos
+                            sociales donde pueden aplicar sus conocimientos para contribuir al desarrollo de la
+                            comunidad.
+                            <br /><br />
+                            Caracteristicas:
+                            <ul>
+                                <li>Trabajo directo con la comunidad para resolver problemas locales o sociales.</li>
+                                <li>Desarrollo de proyectos enfocados en la educación, la salud, el bienestar social, la
+                                    sostenibilidad, entre otros.</li>
+                                <li>Evaluación del impacto social generado por los proyectos.</li>
+                            </ul>
+
+                            Predomina la modalidad presencial, pero también puede tener componentes a distancia.
+
+                        </div>
+                        <div class="contenedorBoton">
+                            <button class="boton" type="button" onclick="vista(3)">Anterior</button>
+                            &nbsp;&nbsp;&nbsp;
+                            <button class="boton" type="button" onclick="vista(5)">Siguiente</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="view" ID="View6" runat="server">
+                        <div class="tituloParrafo">
+                            Tipos de Escenarios
+
+                        </div>
+                        <div class="parrafo">
+                            Laboratorios Virtuales
+                            <br /><br />
+                            Los laboratorios virtuales permiten a los estudiantes experimentar con herramientas y
+                            simuladores
+                            en un entorno digital. Son especialmente útiles en programas de ciencias, ingeniería y
+                            tecnología.
+                            <br /><br />
+                            Caracteristicas:
+                            <ul>
+                                <li>Los estudiantes interactúan con software especializado que simula un laboratorio
+                                    físico o experimentos reales.</li>
+                                <li>Pueden realizarse experimentos de física, química, biología, matemáticas, entre
+                                    otros, sin la necesidad de laboratorios tradicionales.</li>
+                                <li>Permiten la retroalimentación instantánea y el trabajo a distancia.</li>
+
+                            </ul>
+
+                            La modalidad de este escenario, es totalmente en línea, utilizando plataformas de simulación
+                            de laboratorio.
+
+                        </div>
+                        <div class="contenedorBoton">
+                            <button class="boton" type="button" onclick="vista(4)">Anterior</button>
+                            &nbsp;&nbsp;&nbsp;
+                            <button class="boton" type="button" onclick="vista(6)">Siguiente</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="view" ID="View7" runat="server">
+                        <div class="tituloParrafo">
+                            Tipos de Escenarios
+
+                        </div>
+                        <div class="parrafo">
+                            Investigacion Aplicada:
+                            <br /><br />
+                            Este componente práctico está orientado a la realización de investigaciones aplicadas que
+                            contribuyan a resolver
+                            problemas específicos del sector productivo, académico o social. Los estudiantes se vinculan
+                            a proyectos de investigación
+                            que implican el análisis de datos, el diseño de experimentos y la implementación de
+                            soluciones innovadoras.
+                            <br /><br />
+                            Caracteristicas:
+                            <ul>
+                                <li>Los estudiantes son guiados por tutores en la definición de objetivos, desarrollo y
+                                    análisis de la investigación.</li>
+                                <li>A menudo, las investigaciones se realizan en colaboración con empresas o
+                                    instituciones públicas.</li>
+                                <li>La investigación puede resultar en publicaciones científicas, informes técnicos o
+                                    productos innovadores.</li>
+
+                            </ul>
+
+                            Su modalidad es mixta, combinando trabajo de campo, laboratorio y escritura de informes.
+
+                        </div>
+                        <div class="contenedorBoton">
+                            <button class="boton" type="button" onclick="vista(5)">Anterior</button>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="contenedorImagen">
+                <div class="imagen">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contenedor3">
+            <div class="contenedorCentral">
+                <div class="subContenedor">
+                    <img class="fondo" src="../Assets/images/universidad.jpg" alt="">
+                    <img class="persona" src="../Assets/images/personaPracticante.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <p style="font-size: 1.8vw">
+                    Requisitos Generales para aplicar a escenarios practicos en la UNAD:
+
+
+
+                <p style="font-size: 1.3vw">
+                    Para aplicar a los componentes practicos en la UNAD, el estudiante debe cumplir algunos requisitos,
+                    aqui te enseñamos unos cuantos:
+                    <br />
+                <ul>
+                    <li>Haber aprobado los prerrequisitos académicos establecidos</li>
+                    <li>Estar matriculado en el período académico correspondiente</li>
+                    <li>Registrar el componente práctico en la plataforma académica</li>
+                    <li>Contar con un escenario aprobado por la universidad</li>
+                    <li>Cumplir con las normas y procedimientos específicos del programa</li>
+                    <li>Presentar la documentación requerida</li>
+
+
+                </ul>
+
+
+
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+        <div class="subtitulo">
+            ¡Informacion para llevar!
+        </div>
+
+        <div class="contenedor3">
+            <div class="contenedorCentral">
+                <div class="subContenedor">
+                    <img class="fondo" src="../Assets/images/nubes.jpg" alt="">
+                    <img class="avion" src="../Assets/images/avionPapel.png" alt="" style="height: 280px">
+                </div>
+            </div>
+
+            <div>
+                <p style="font-size: 1.8vw">
+                    Descarga lo que necesites:
+
+                </p>
+
+                <p style="font-size: 1.3vw">
+                    Documentacion en PDF:
+                    <br />
+                <ul>
+                    <li><button class="boton" type="button" onclick="descargarPDF(1)">Descargar</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evaluacion y Seguimiento</li>
+                    <li><button class="boton" type="button" onclick="descargarPDF(2)">Descargar</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Herramientas Usadas</li>
+                    <li><button class="boton" type="button" onclick="descargarPDF(3)">Descargar</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requisitos Necesarios</li>
+                    <li><button class="boton" type="button" onclick="descargarPDF(4)">Descargar</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resumen Tipos de Escenarios</li>
+                </ul>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="subtitulo">
+            ¡Demuestra lo que aprendiste en esta seccion!
+        </div>
+
+        <div class="contenedor4">
+            <div class="contenedorExtra">
+                <p style="font-size: 1.8vw">
+                    Te invitamos a presentar un examen de conocimiento general sobre el tema visto
+
+                </p>
+
+                <p style="font-size: 1.3vw">
+                    En el test se validara el conocimiento que has adquirido y te permitira afianzar los temas tratados:
+
+                </p>
+
+                <div>
+                    ¡Haz tu mejor esfuerzo!
+
+                </div>
+
+                <div class="contenedorBoton">
+                    <button class="boton" type="button" onclick="next()">Ir al Test</button>
+
+                </div>
+
+            </div>
+
+            <div class="contenedorCentral">
+                <div class="subContenedor">
+                    <img class="fondo" src="../Assets/images/test.jpg" alt="">
+                    <img class="persona" src="../Assets/images/mano.png" alt="" style="height: 300px">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <footer>
+            <div class="banner">
+                <img class="Banner" src="../Assets/images/banner UNAD.jpg" />
+
+            </div>
+
+        </footer>
+    </form>
+</body>
+
+<script src="../js/componentePractico.js"></script>
+
+</html>
