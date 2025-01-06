@@ -337,8 +337,8 @@ li {
 
     .contenedor3 {
         display: grid;
-        grid-template-columns: 1fr 0fr;
-        place-items: center;
+        grid-template-columns: 1fr;
+        place-items: left;
         border-radius: 10px;
         padding: 10px;
     }
@@ -351,6 +351,13 @@ li {
         font-size: 2vw;
     }
 
+    .contenedor4 {
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        padding: 0 10px 0 10px;
+    }
 }
 
 
