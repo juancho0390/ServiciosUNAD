@@ -329,7 +329,7 @@ li {
 }
 
     .personaTest:hover {
-        transform: scale(1.22);
+        transform: scale(1.42);
     }
 
 .contenedorBoton {
@@ -358,7 +358,7 @@ li {
     }
 
     .izquierda {
-        font-size: 3vw;
+        font-size: 2.8vw;
         padding: 3%;
     }
 
@@ -371,15 +371,19 @@ li {
     .tarjeta {
         width: 4.5rem;
         height: 6rem;
+        border-radius: 5px;
     }
 
     .cardImage{
         object-fit: content;
         display: block;
+        border-radius: 5px;
     }
 
     .cardTitle{
         font-size: 10px;
+        border-radius: 5px;
+        
     }
 
     .derecha{
@@ -388,6 +392,22 @@ li {
         gap: 3%;
         
         
+    }
+
+    .tarjeta:hover  .cardTitle {
+        background-color: #ffd800;
+        cursor: pointer;
+        background-color: #ffd800;
+        transform: translateY(-20px);
+        border-radius: 0;
+       
+
+    }
+
+.tarjeta:hover {
+        background-color: #ffd800;
+        cursor: pointer;
+    
     }
 
   }

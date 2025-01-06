@@ -285,5 +285,42 @@ li {
 }
 
 
+/*Codigo para hacer responsivo*/
+
+@media (max-width: 576px){
+
+    .contenedor1 {
+        display: grid;
+        place-items: center;
+        height: 250px;
+    }
+
+    .videoContainer {
+        max-width: 50%;
+        max-height: 50%;
+        transform: translateY(-75px);
+    }
+
+
+    .c1 {
+        max-width: 20%;
+        display: none;
+    }
+    
+
+    .contenedor2 {
+        display: none;
+    }
+
+    .contenedor3 {
+        display: none;
+    }
+
+}
+
+
+
+
+
 
 
