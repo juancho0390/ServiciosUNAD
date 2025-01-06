@@ -309,6 +309,27 @@ li {
     
 
     .contenedor2 {
+        gap: 0%;
+        display: grid;
+        grid-template-columns: 1fr 0fr;
+        place-items: center;
+        
+    }
+
+    .tituloParrafo {
+        font-size: 5vh;
+        align-content: center;
+    }
+
+    .parrafo {
+        font-size: 2vh;
+    }
+
+    .boton {
+        font-size: 2vh;
+    }
+
+    .imagen {
         display: none;
     }
 
