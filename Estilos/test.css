@@ -120,3 +120,45 @@ body {
     border-radius: 25px;;
 }
 
+.label {
+    display: grid;
+    grid-template-columns: 1fr 40fr;
+}
+
+
+@media (max-width: 576px){
+
+
+    .head, .titulo {
+        font-size: 5vw;
+    }
+
+    .parrafo {
+        font-size: 2vw;
+        border-radius: 15px;
+    }
+
+    .subtitulo {
+        font-size: 4vw;
+    }
+
+    .enunciado {
+        font-size: 3vw;
+        border-radius: 10px;
+    }
+
+    .respuestas {
+        font-size: 2vw;
+    }
+
+    .boton {
+        font-size: 2vw;
+    }
+
+    .label {
+        display: grid;
+        grid-template-columns: 1fr 14fr;
+        align-items: center;
+    }
+}
+
