@@ -117,8 +117,9 @@ body {
 
 .parrafo {
     font-family: "Sniglet", system-ui;
-    text-align: justify;
+    text-align: center;
     align-content: center;
+    
 }
 
 .contenedorBoton {
@@ -321,6 +322,7 @@ li {
     .tituloParrafo {
         font-size: 5vw;
         align-content: center;
+        max-height: 7vw;
     }
 
     .parrafo {
