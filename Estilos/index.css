@@ -22,22 +22,29 @@ body {
     padding: 5% 0 0 0;
 }
 
-.conteiner_general {
-    /*border: 5px solid #00ff21;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contenedor1 {
+    display: grid;
+    place-items: center;
     height: fit-content;
 }
+
+
 
 .conteiner_general2 {
     /*border: 5px solid;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
+    place-items: center;
 }
 
 .contenedor_candado {
-    text-align: right;
+    /* text-align: right; */
+    background-image: url("/Assets/images/candado.png");
+    background-size: cover;
+    background-position: center; /* Centra la imagen en el elemento */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 300px;
+    height: 300px;
 }
 
 .candado {
@@ -62,6 +69,7 @@ body {
 .conteiner-down {
     /*border: 5px solid #ffd800;*/
     text-align: center;
+    padding: 10px;
 }
 
 .boton {
@@ -73,4 +81,56 @@ body {
 
 .boton:hover {
     transform: scale(1.05);
+}
+
+
+@media (max-width: 576px){
+
+    body {
+        padding: 5%;
+    }
+
+    .contenedor1 {
+        background-color: rgb(246, 246, 246);
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .conteiner_general2 {
+        display: block;
+
+    }
+
+    .conteiner-up {
+        padding: 0px;
+       
+    }
+    
+    .contenedor_candado {
+        margin: 5%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .conteiner-down {
+        padding: 5px;
+    }
+
+    input {
+        font-size: 3vw;
+    }
+
+    .boton {
+        font-size: 3vw;
+        max-width: auto;
+        
+    }
+
+
+
+    
+
+
+
+   
 }
