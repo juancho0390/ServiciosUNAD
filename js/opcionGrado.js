@@ -19,7 +19,7 @@ function descargarPDF(n) {
 
     switch (n) {
         case 1:
-            var url = '../Assets/Docs Pdf/Opcion de Grado/Creditos de Posgrado.pdf';  // Ruta relativa al archivo PDF
+            var url = '../Assets/Docs Pdf/Opcion de Grado/creditos de posgrado.pdf';  // Ruta relativa al archivo PDF
             var enlace = document.createElement('a');
 
 
@@ -54,7 +54,7 @@ function descargarPDF(n) {
             break;
 
         case 3:
-            var url = '../Assets/Docs Pdf/Opcion de Grado/Monografia.pdf';  // Ruta relativa al archivo PDF
+            var url = '../Assets/Docs Pdf/Opcion de Grado/monografia.pdf';  // Ruta relativa al archivo PDF
             var enlace = document.createElement('a');
 
 
