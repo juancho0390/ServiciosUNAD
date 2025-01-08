@@ -343,4 +343,9 @@ li {
     .parrafo {
         font-size: 2vw;
     }
+
+    .boton {
+        font-size: 2vw;
+        padding: 5px;
+    }
 }
